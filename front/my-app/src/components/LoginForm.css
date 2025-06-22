@@ -1,0 +1,92 @@
+div {
+    max-width: 800px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #a8f8c4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.inner {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 1rem;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --primary-color: #01d69f;
+    --primary-hover: #00ae91;
+    --text-color: #272626;
+    --border-color: #d1d5db;
+    --bg-color: #ffffff;
+    --bg-hover: #f9fafb;
+    --radius: 0.5rem;
+    --transition: all 0.2s ease-in-out;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+input, button {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #272626;
+    background-color: var(--primary-color);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
