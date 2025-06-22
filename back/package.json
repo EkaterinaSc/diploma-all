@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.mjs",
   "scripts": {
-    "dev": "nodemon index.mjs"
+    "dev": "nodemon index.mjs",
+    "start": "node index.mjs",
+    "install-front": "cd ../front/my-app && npm install",
+    "build-front": "cd ../front/my-app && npm run build"
   },
   "private": true,
   "keywords": [],
